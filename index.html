@@ -10,9 +10,6 @@
     <h1>GOP Candidates</h1>
     <div id="graph"></div>
     
-    <h1>Democratic Candidates</h1>
-    <div id ="graph1"></div>
-    
     <script>
         
         var url = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-gop-primary";
@@ -23,8 +20,8 @@
             cache: true,
             success: function(data) {
                 
-                var candidateBar = d3.select("#graph").data(data.estimates),
-                    candidateWrapper = candidateBar.enter().append("div").classed("group", true);
+                var candidateBar = d3.select("#graph").selectAll("div").data(data.estimates);
+                var candidateWrapper = candidateBar.enter().append("div").classed("group", true);
                 
                 candidateWrapper.append("div")
                     .classed("choice", true)
@@ -42,6 +39,13 @@
                 
             }
         });
+        </script>
+        
+        
+        <h1>Democratic Candidates</h1>
+        <div id ="graph1"></div>
+        
+        <script>
         var url1 = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-democratic-primary";
         
         $.ajax(url1, {
@@ -50,8 +54,8 @@
             cache: true,
             success: function(data) {
                 
-                var candidateBar = d3.select("#graph1").data(data.estimates),
-                    candidateWrapper = candidateBar.enter().append("div").classed("group1", true);
+                var candidateBar = d3.select("#graph1").selectAll("div").data(data.estimates);
+                var candidateWrapper = candidateBar.enter().append("div").classed("group1", true);
                 
                 candidateWrapper.append("div")
                     .classed("choice", true)
