@@ -1,6 +1,6 @@
 # The-Art-of-Big-Social-Data README
 
- *acw365
+*acw365
 
 This program utilizes an Application Program Interface from the Huffington Post that provides polling information for candidates in the Republican and Democratic primaries for 2016.  
 
