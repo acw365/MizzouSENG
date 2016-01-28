@@ -39,3 +39,9 @@ body {
   display: table;
   clear: both;
 }
+
+.group1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
