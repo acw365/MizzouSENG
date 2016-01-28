@@ -9,7 +9,7 @@ body {
     text-align: right;
     margin: 8px 5px;
 }
-#graph .repbar {
+#graph .bar {
     width: 0;
     height: 35px;
     background-color: coral;
