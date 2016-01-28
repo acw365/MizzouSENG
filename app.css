@@ -27,7 +27,7 @@ body {
     float: left;
 }
 
-#graph1 .dembar {
+#graph1 .bar {
     width: 0;
     height: 35px;
     background-color: #3366ff;
@@ -35,12 +35,6 @@ body {
     float: left;
 }
 .group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.group1:after {
   content: "";
   display: table;
   clear: both;
