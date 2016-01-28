@@ -12,16 +12,16 @@
     
     <script>
         
-        //var url = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-gop-primary";
+        var url = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-gop-primary";
         
-        /*$.ajax(url, {
+        $.ajax(url, {
             dataType: "jsonp",
             jsonpCallback: "pollsterCallback",
             cache: true,
             success: function(data) {
                 
-                var candidateBar = d3.select("#graph").selectAll("div").data(data.estimates);
-                var candidateWrapper = candidateBar.enter().append("div").classed("group", true);
+                var candidateBar = d3.select("#graph").selectAll("#graph").data(data.estimates);
+                var candidateWrapper = candidateBar.enter().append("#graph").classed("group", true);
                 
                 candidateWrapper.append("div")
                     .classed("choice", true)
@@ -38,7 +38,7 @@
                     });
                 
             }
-        });*/
+        });
         </script>
         
         
@@ -54,8 +54,8 @@
             cache: true,
             success: function(data) {
                 
-                var candidateBar = d3.select("#graph1").selectAll("div").data(data.estimates);
-                var candidateWrapper = candidateBar.enter().append("div").classed("group1", true);
+                var candidateBar = d3.select("#graph1").selectAll("#graph1").data(data.estimates);
+                var candidateWrapper = candidateBar.enter().append("#graph1").classed("group1", true);
                 
                 candidateWrapper.append("div")
                     .classed("choice", true)
