@@ -10,7 +10,7 @@ body {
     margin: 8px 5px;
 }
 
-#graph2 .choice {
+#graph1 .choice {
     float: left;
     font-family: arial;
     font-size: 1.5em;
@@ -27,7 +27,7 @@ body {
     float: left;
 }
 
-#graph2 .dembar {
+#graph1 .dembar {
     width: 0;
     height: 35px;
     background-color: #3366ff;
