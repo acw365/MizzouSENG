@@ -9,10 +9,18 @@ body {
     text-align: right;
     margin: 8px 5px;
 }
-#graph .bar {
+#graph .repbar {
     width: 0;
     height: 35px;
     background-color: coral;
+    margin: 5px;
+    float: left;
+}
+
+#graph .dembar {
+    width: 0;
+    height: 35px;
+    background-color: #3366ff;
     margin: 5px;
     float: left;
 }
