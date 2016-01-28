@@ -1,8 +1,7 @@
 # MizzouSENG
 Mizzou Software Engineering Course
 
-Alec Knight
-ak4mb
+Alec Knight; ak4mb
 
 **The Huffington Post: Poll Data and Candidate Standings**
 
