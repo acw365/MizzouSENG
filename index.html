@@ -48,17 +48,17 @@
             cache: true,
             success: function(data) {
                 
-                var candidateBar = d3.select("#graph1").selectAll("div").data(data.estimates),
-                    candidateWrapper = candidateBar.enter().append("div").classed("group", true);
+                var candidateBar1 = d3.select("#graph1").selectAll("div").data(data.estimates),
+                    candidateWrapper1 = candidateBar1.enter().append("div").classed("group", true);
                 
-                candidateWrapper.append("div")
+                candidateWrapper1.append("div")
                     .classed("choice", true)
                     .text(function(candidate) {
                         return candidate.choice + " " + candidate.value + "%";
                     });
                 
                 candidateWrapper.append("div")
-                    .classed("dembar", true)
+                    .classed("bar", true)
                     .transition()
                     .duration(1000)
                     .style("width", function(candidate) {
