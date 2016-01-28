@@ -9,6 +9,16 @@ body {
     text-align: right;
     margin: 8px 5px;
 }
+
+#graph2 .choice {
+    float: left;
+    font-family: arial;
+    font-size: 1.5em;
+    min-width: 200px;
+    text-align: right;
+    margin: 8px 5px;
+}
+
 #graph .bar {
     width: 0;
     height: 35px;
@@ -17,7 +27,7 @@ body {
     float: left;
 }
 
-#graph .dembar {
+#graph2 .dembar {
     width: 0;
     height: 35px;
     background-color: #3366ff;
